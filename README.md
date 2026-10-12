@@ -61,8 +61,13 @@ Referencias oficiales:
 - `dist/productos/<slug>/index.html`: enlaces de producto independientes.
 - `scripts/prepare-catalogue.py`: normalización, inventario de imágenes y generación de páginas.
 - `test-store.cjs`: pruebas de búsqueda, descuentos, carrito y subtotal.
-- `.openai/hosting.json`: configuración del alojamiento de la vista privada.
+- `index.html` y `.nojekyll`: entrada de la demostración estática en GitHub Pages.
 
 ## Verificación
 
 Se verifican sintaxis JavaScript, cálculos, filtros, recuperación del carrito, integridad del catálogo y presencia de fotografías. La revisión visual mediante navegador de la nueva vista no se ejecuta cuando el entorno no ofrece la herramienta de control de navegador requerida por Sites.
+
+
+## Vista de diseño en GitHub Pages
+
+La entrada de la raíz muestra una demostración sin ventas, pedidos ni pagos. Carga los recursos desde `dist/`. GitHub Pages utiliza la rama `main`, carpeta `/ (root)`; `.nojekyll` conserva la publicación estática. Esta vista no reemplaza la tienda operativa con servidor, inventario y checkout.
